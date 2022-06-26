@@ -1,9 +1,20 @@
+-- // USAGE \\ --
+-- In chat, type "/headless username" or "/Headless username"
+-- You CANNOT use "me" for the username, IT MUST BE THE FULL USERNAME
+-- Example: /headless Dope_RBX
+
+-- // INSTRUCTIONS \\ --
+-- Insert a blank script in ServerScriptService
+-- Paste this code into that script
+-- Change 'Username', which can be found below, to your desired username(s)
+-- Your done! For usage instructions, refer to the guide above.
+
 local Players = game:GetService("Players")
 
 local Prefix = '/'
 
 local Whitelisted = {
-	['Dope_RBX'] = 'Whitelisted'; --to add more, just make more
+	['Username'] = 'Whitelisted'; -- Add username(s) here
 }
 
 
@@ -32,3 +43,4 @@ Players.PlayerAdded:Connect(function(Player)
 		end)
 	end
 end)
+-- made by tony (dope_rbx)
